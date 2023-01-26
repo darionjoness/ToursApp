@@ -1,13 +1,98 @@
-body {
+*{
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: #f4f4f4;
 }
+
+.header{
+  text-align: center;
+  margin: 40px 0;
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.header::after{
+  content: '';
+  position: absolute;
+  height: 5px ;
+  width: 100px;
+  background-color: skyblue;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tour{
+  background-color: #fff;
+  position: relative;
+  width: 400px;
+  margin:30px auto;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.tourImg img{
+  width: 100%;
+  height: 250px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.tourText{
+  padding: 10px 30px;
+}
+
+.tourText h2{
+  font-size: 1rem;
+  margin: 10px 0;
+  letter-spacing: 1.5px;
+}
+
+.tourText .info{
+  font-size: 1.1rem;
+  color: plum;
+}
+
+.tourText .price{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 0 5px 0 5px;
+  color: blue;
+}
+
+.readMore{
+  cursor: pointer;
+  color: skyblue;
+}
+
+.buttonDiv{
+  text-align: center;
+}
+
+
+.notInterested{
+  background-color: transparent;
+  color: darkred;
+  border: 1px solid darkred;
+  border-radius: 5px;
+  padding: 2px 25px ;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 20px 0 10px 0;
+}
+
+.loading{
+  text-align: center;
+}
+
+
+
+
+
